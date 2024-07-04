@@ -1,0 +1,25 @@
+<h4>Lista de Pacientes</h4>
+
+<table class="table mt-3 animated fadeIn faster animated fadeIn faster">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Genero</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let paciente of pacientes; let i = index">
+        <td>{{ paciente.idpaciente }}</td>
+        <td>{{ paciente.nombre }}</td>
+        <td>{{ paciente.apellido }}</td>
+        <td>{{ paciente.genero }}</td>
+       
+      </tr>
+      
+    </tbody>
+  </table>
+  
